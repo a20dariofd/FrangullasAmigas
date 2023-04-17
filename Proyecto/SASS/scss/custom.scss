@@ -1,16 +1,22 @@
 // Custom.scss
-// 1- Import functions
+@font-face {
+  font-family: "Baguette";
+  src: url("../../Recursos/Fuentes/Baguette/Baguette.ttf");
+}
+@font-face {
+  font-family: "Magic-Bread";
+  src: url("../../Recursos/Fuentes/Magic-bread/Magic\ Bread\ Regular.ttf");
+}
 @import "../bootstrap/scss/functions";
 // 2- Variables Overrides
+$theme-colors: (
+  "bgcolor": #dbdbdb,
+  "header": #f7a325,
+  "elementos": #ffc554,
+);
+$font-family-sans-serif: Magic-Bread;
+$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace: Baguette;
 
-// 3- Include remainder of required Bootstrap stylesheets
-@import "../bootstrap/scss/variables";
-@import "../bootstrap/scss/mixins";
-//4- Include any optional Bootstrap components as you like
-@import "../bootstrap/scss/root";
-@import "../bootstrap/scss/reboot";
-@import "../bootstrap/scss/type";
-@import "../bootstrap/scss/images";
-@import "../bootstrap/scss/containers";
-@import "../bootstrap/scss/grid";
+@import "../bootstrap/scss/bootstrap.scss";
 //5- Add additional custom code here
