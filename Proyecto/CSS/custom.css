@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Baguette";
-  src: url("../../Recursos/Fuentes/Baguette/Baguette.ttf");
+  src: url("../Recursos/Fuentes/Baguette/Baguette.ttf");
 }
 @font-face {
   font-family: "Magic-Bread";
-  src: url("../../Recursos/Fuentes/Magic-bread/Magic Bread Regular.ttf");
+  src: url("../Recursos/Fuentes/Magic-bread/Magic Bread Regular.ttf");
 }
 /*!
  * Bootstrap  v5.3.0-alpha3 (https://getbootstrap.com/)

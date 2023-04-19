@@ -11,8 +11,10 @@
   <body class="bg-bgcolor">
     <!-- Contenedor -->
     <div class="container-fluid">
-      <!-- Cabecera -->
-      <nav class="navbar navbar-expand-lg bg-header">
+      <div class="row justify-content-center">
+        <!-- Cabecera -->
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg bg-header">
         <div class="container-fluid">
           <a class="navbar-brand font-monospace" href="#">Frangullas Amigas</a>
           <button
@@ -128,13 +130,17 @@
             </ul>
           </div>
         </div>
-      </nav>
-      <!-- Titulo -->
-      <div class="row my-3 text-center h1">
+          </nav>
+        </div>
+        <!-- Titulo -->
+        <div class="col-12">
+          <div class="row my-3 text-center h1">
         <div class="col-12 font-monospace">Frangullas Amigas</div>
-      </div>
-      <!-- Carrusel -->
-      <div id="carouselExampleIndicators" class="carousel slide">
+          </div>
+        </div>
+        <!-- Carrusel -->
+        <div class="col-12 col-lg-6">
+          <div id="carouselExampleIndicators" class="carousel slide ">
         <div class="carousel-indicators">
           <button
             type="button"
@@ -159,13 +165,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="..." />
+            <img src="../Recursos/Imagenes/baguettes-mercado-francia-cerca.jpg" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
+            <img src="../Recursos/Imagenes/diferentes-tipos-pan-base-harina-trigo.jpg" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
+            <img src="../Recursos/Imagenes/variedad-pan-recien-horneado-mesa.jpg" class="d-block w-100" alt="..." />
           </div>
         </div>
         <button
@@ -186,8 +192,43 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
-      <!-- Horario -->
+          </div>
+        </div>
+        <!-- Horario -->
+        <div class="col-12 my-2 ">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <table class="table table-striped">
+              <thead class="bg-header">
+                <tr>
+                  <th>Lunes</th>
+                  <th>Martes</th>
+                  <th>Miercoles</th>
+                  <th>Jueves</th>
+                  <th>Viernes</th>
+                  <th>Sabado</th>
+                  <th>Domingo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>9:00 . 19:00</td>
+                  <td>9:00 . 19:00</td>
+                  <td>9:00 . 19:00</td>
+                  <td>9:00 . 19:00</td>
+                  <td>9:00 . 19:00</td>
+                  <td>9:00 . 13:00</td>
+                  <td>Closed</td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+            <div class="d-lg-block d-none col-lg-6 text-center">
+              Abrimos toda a semana a extepción de los domingos .
+            </div>
+          </div>
+        </div>
+      </div>  
     </div>
   </body>
   <script
