@@ -5,18 +5,22 @@
 }
 @font-face {
   font-family: "Magic-Bread";
-  src: url("../../Recursos/Fuentes/Magic-bread/Magic\ Bread\ Regular.ttf");
+  src: url("../../Recursos/Fuentes/Magic-bread/MagicBreadRegular.ttf");
 }
 @import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
 // 2- Variables Overrides
-$theme-colors: (
-  "bgcolor": #dbdbdb,
-  "header": #f7a325,
-  "elementos": #ffc554,
-);
 $font-family-sans-serif: Magic-Bread;
 $font-family-serif: Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace: Baguette;
 
-@import "../bootstrap/scss/bootstrap.scss";
 //5- Add additional custom code here
+$custom-colors: (
+  "bgcolor": #dbdbdb,
+  "header": #f7a325,
+  "elementos": #ffc554,
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../bootstrap/scss/bootstrap.scss";

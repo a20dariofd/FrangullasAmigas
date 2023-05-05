@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frangullas Amigas</title>
     <link rel="icon" type="image/png" href="../Recursos/Imagenes/Logo.svg" />
-    <link rel="stylesheet" type="text/css" href="../CSS/custom.css" />
+    <link rel="stylesheet" type="text/css" href="..\SASS\scss\custom.css" />
 </head>
 
 <body class="bg-bgcolor">
@@ -149,21 +149,58 @@
                     <!-- Contenido -->
                     <div class="col-12">
                         <div class="row justify-content-lg-around justify-content-center">
-                            <div class="row">
+                            <div class="row align-items-center">
                                 <div class="col-12 col-lg-6">
-
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h1 class="font-monospace text-center"> Formulario de contacto</h1>
+                                        </div>
+                                        <div class="col-12">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="InputNombre">
+                                                        <h4>Nombre y Apellidos</h4>
+                                                    </label>
+                                                    <input type="text" class="form-control" id="InputText"
+                                                        placeholder="Nombre completo">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="InputEmail1">
+                                                        <h4>Correo electronico</h4>
+                                                    </label>
+                                                    <input type="email" class="form-control" id="InputEmail1"
+                                                        aria-describedby="emailHelp" placeholder="Introducir email">
+                                                    <small id="emailHelp" class="form-text text-muted">
+                                                        Nunca
+                                                        compartiremos tu email con nadie mas.
+                                                    </small>
+                                                </div>
+                                                <div class="form-group mb-2">
+                                                    <label for="InputComment">
+                                                        <h4>Comentario</h4>
+                                                    </label>
+                                                    <textarea class="form-control" id="FormControlTextarea1"
+                                                        rows="3"></textarea>
+                                                </div>
+                                                <button type="submit" class="btn btn-elementos">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-12 col-lg-6 ">
-                                    <div class="row">
+                                    <div class="row justify-content-center align-items-center">
                                         <div class="col-12 col-lg-6">
-
-                                            <h1 class="font-monospace text-center col-12">Formulario de contacto</h1>
-
+                                            <h1 class="font-monospace text-center">Frangullas amigas</h1>
                                         </div>
-                                        <div class="col-12 col-lg-6 d-flex flex-row justify-content-center w-auto">
-                                            <button class="btn btn-elementos mx-2"><img class="img-fluid"></button>
-                                            <button class="btn btn-elementos mx-2"><img class="img-fluid"></button>
-                                            <button class="btn btn-elementos mx-2"><img class="img-fluid"></button>
+                                        <div class="col-12 col-lg-6 d-flex flex-column ">
+                                            <button class="btn btn-elementos m-2 w-auto"><img
+                                                    class="img-fluid"></button>
+                                            <button class="btn btn-elementos m-2 w-auto"><img
+                                                    class="img-fluid"></button>
+                                            <button class="btn btn-elementos m-2 w-auto"><img
+                                                    class="img-fluid"></button>
+
+
                                         </div>
                                     </div>
                                 </div>
