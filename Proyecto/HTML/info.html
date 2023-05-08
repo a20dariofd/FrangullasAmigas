@@ -109,6 +109,14 @@
                         </div>
                     </div>
                 </nav>
+                <!-- Breadcrums -->
+                <nav aria-label="breadcrumb" class="bg-header ps-4">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item" aria-current="page">>>>></li>
+                        <li class="breadcrumb-item"><a href="index.html">FrangullasAmigas</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Contactanos</li>
+                    </ol>
+                </nav>
             </div>
             <!-- Titulo -->
             <div class="col-12">
@@ -125,15 +133,15 @@
                     </div>
                     <!-- Contenido -->
                     <div class="col-12">
-                        <div class="row justify-content-lg-around justify-content-center">
+                        <div class="row justify-content-lg-around justify-content-center align-items-center">
                             <div class="col-12 col-lg-6 w-auto">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d122979.7888352926!2d32.5613213338724!3d80.19608282293336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1682094970667!5m2!1ses!2ses"
-                                    width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                             <div class="col-12 col-lg-6 ">
-                                <h4 class="text-center">Tienda escondida secreta en la nieve .</h4>
+                                <h4 class="text-center">D/ calle de la nieve , piso 3/4 , 8B</h4>
                             </div>
                         </div>
                     </div>
@@ -151,7 +159,7 @@
                         <div class="row justify-content-lg-around justify-content-center">
                             <div class="row align-items-center">
                                 <div class="col-12 col-lg-6">
-                                    <div class="row">
+                                    <div class="row justify-content-center">
                                         <div class="col-12">
                                             <h1 class="font-monospace text-center"> Formulario de contacto</h1>
                                         </div>
@@ -182,23 +190,54 @@
                                                     <textarea class="form-control" id="FormControlTextarea1"
                                                         rows="3"></textarea>
                                                 </div>
-                                                <button type="submit" class="btn btn-elementos">Submit</button>
                                             </form>
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-elementos" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">
+                                                Submit
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title" id="exampleModalLabel">Aviso
+                                                            </h1>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <h3>O seu comentario foi enviado correctamente. <br />
+                                                                Un saudo.</h3>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-elementos"
+                                                                data-bs-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6 ">
                                     <div class="row justify-content-center align-items-center">
                                         <div class="col-12 col-lg-6">
-                                            <h1 class="font-monospace text-center">Frangullas amigas</h1>
+                                            <div class="row justify-content-center">
+                                                <h1 class="font-monospace text-center">Frangullas amigas</h1><img
+                                                    class="img-fluid w-50" src="../Recursos/Imagenes/Logo.svg">
+
+                                            </div>
+
                                         </div>
                                         <div class="col-12 col-lg-6 d-flex flex-column ">
-                                            <button class="btn btn-elementos m-2 w-auto"><img
-                                                    class="img-fluid"></button>
-                                            <button class="btn btn-elementos m-2 w-auto"><img
-                                                    class="img-fluid"></button>
-                                            <button class="btn btn-elementos m-2 w-auto"><img
-                                                    class="img-fluid"></button>
+                                            <button class="btn btn-elementos m-2 w-auto">Tel: 999 999 999</button>
+                                            <button class="btn btn-elementos m-2 w-auto">Correo :
+                                                frangullasAmigas@correos.com</button>
+                                            <button class="btn btn-elementos m-2 w-auto">@frangullasAmigas</button>
 
 
                                         </div>
@@ -211,47 +250,58 @@
                 </div>
             </div>
             <!-- Pie de pagina -->
-            <div class="col-12 my-2 bg-header">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-6 text-start">
-                        <h5>Creado por DarioFungueiriño</h5>
-                    </div>
-                    <div class="col-6 text-end">
-                        <h5>Agradecimientos a :<br />
-                            Ætoms<br />
-                            <a
-                                href="https://www.freepik.es/foto-gratis/diferentes-tipos-pan-base-harina-trigo_7220003.htm#query=pan&position=0&from_view=keyword&track=sph">Imagen
-                                de KamranAydinov</a> en Freepik<br />
+            <div class="col-12 px-2 mt-2 d-none d-md-block">
+                <div class="container-fluid">
+                    <div class="row justify-content-between align-items-center bg-header">
+                        <div class="col-6 text-start">
+                            <h5>Creado por DarioFungueiriño</h5>
+                        </div>
+                        <div class="col-6 text-end">
+                            <h5>Agradecimientos a :<br />
+                                Ætoms<br />
+                                <a
+                                    href="https://www.freepik.es/foto-gratis/diferentes-tipos-pan-base-harina-trigo_7220003.htm#query=pan&position=0&from_view=keyword&track=sph">Imagen
+                                    de KamranAydinov</a> en Freepik<br />
 
-                            <a
-                                href="https://www.freepik.es/foto-gratis/baguettes-mercado-francia-cerca_1138282.htm#query=pan&position=3&from_view=keyword&track=sph">Imagen
-                                de jcstudio</a> en Freepik<br />
+                                <a
+                                    href="https://www.freepik.es/foto-gratis/baguettes-mercado-francia-cerca_1138282.htm#query=pan&position=3&from_view=keyword&track=sph">Imagen
+                                    de jcstudio</a> en Freepik<br />
 
-                            Imagen de <a
-                                href="https://www.freepik.es/foto-gratis/variedad-pan-recien-horneado-mesa_2728047.htm#query=pan&position=7&from_view=keyword&track=sph">Freepik</a><br />
-                            <a
-                                href="https://www.freepik.es/foto-gratis/panaderia-pan-masa-fermentada-hecha-casa-sana_1044713.htm#query=pan&position=21&from_view=search&track=sph">Imagen
-                                de mrsiraphol</a> en Freepik <br />
-                            Imagen de <a
-                                href="https://www.freepik.es/foto-gratis/vista-superior-sabroso-pan-surtido_8192484.htm#query=pan&position=42&from_view=search&track=sph">Freepik</a><br />
-                            <a
-                                href="https://www.freepik.es/foto-gratis/primer-plano-sabrosa-tarta-chocolate-trozos-chocolate-bandeja-hornear_15136675.htm#query=pasteleria&position=8&from_view=keyword&track=sph">Imagen
-                                de valeria_aksakova</a> en Freepik </br>
-                            <a
-                                href="https://www.freepik.es/foto-gratis/croissants-tabla-cortar-madera_11268281.htm#query=bolleria&position=2&from_view=search&track=sph">Imagen
-                                de jcomp</a> en Freepik</br>
-                            <a
-                                href="https://www.freepik.es/foto-gratis/vista-superior-pasteles-carne-caseros-belyashi-bandeja-madera-oscura_8405792.htm#query=empanadas&position=5&from_view=search&track=sph">Imagen
-                                de KamranAydinov</a> en Freepik</br><a
-                                href="https://www.pexels.com/es-es/video/pan-comida-persona-manos-5057309/">Vídeo de Max
-                                Avans:</a></br>
-                        </h5>
+                                Imagen de <a
+                                    href="https://www.freepik.es/foto-gratis/variedad-pan-recien-horneado-mesa_2728047.htm#query=pan&position=7&from_view=keyword&track=sph">Freepik</a><br />
+                                <a
+                                    href="https://www.freepik.es/foto-gratis/panaderia-pan-masa-fermentada-hecha-casa-sana_1044713.htm#query=pan&position=21&from_view=search&track=sph">Imagen
+                                    de mrsiraphol</a> en Freepik <br />
+                                Imagen de <a
+                                    href="https://www.freepik.es/foto-gratis/vista-superior-sabroso-pan-surtido_8192484.htm#query=pan&position=42&from_view=search&track=sph">Freepik</a><br />
+                                <a
+                                    href="https://www.freepik.es/foto-gratis/primer-plano-sabrosa-tarta-chocolate-trozos-chocolate-bandeja-hornear_15136675.htm#query=pasteleria&position=8&from_view=keyword&track=sph">Imagen
+                                    de valeria_aksakova</a> en Freepik </br>
+                                <a
+                                    href="https://www.freepik.es/foto-gratis/croissants-tabla-cortar-madera_11268281.htm#query=bolleria&position=2&from_view=search&track=sph">Imagen
+                                    de jcomp</a> en Freepik</br>
+                                <a
+                                    href="https://www.freepik.es/foto-gratis/vista-superior-pasteles-carne-caseros-belyashi-bandeja-madera-oscura_8405792.htm#query=empanadas&position=5&from_view=search&track=sph">Imagen
+                                    de KamranAydinov</a> en Freepik</br><a
+                                    href="https://www.pexels.com/es-es/video/pan-comida-persona-manos-5057309/">Vídeo de
+                                    Max
+                                    Avans:</a></br>
+                            </h5>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </body>
-<script type="text/javascript" src="../SASS/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="../SASS/bootstrap/dist/js/bootstrap.bundle.min.js">
+    var myModal = document.getElementById('myModal')
+    var myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+    })
+</script>
 
 </html>
