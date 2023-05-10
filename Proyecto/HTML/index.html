@@ -197,8 +197,16 @@
             <div class="row justify-content-center align-items-center">
               <div class="col-12 col-lg-6">
                 <div class="row">
-                  <video src="../Recursos/Videos/secuencia.mp4" poster="../Recursos/Imagenes/VideoPoster.png" autoplay
-                    muted loop controls width="845" height="480"></video>
+                  <!-- Ratio -->
+                  <div class="ratio ratio-16x9" >
+                    <!-- Subtitulos para o video -->
+                    <video poster="../Recursos/Imagenes/VideoPoster.png" autoplay
+                    muted loop controls width="845" height="480">
+                    <source src="../Recursos/Videos/video.mp4" type="video/mp4">
+	                  <track src="../Recursos/Videos/videoSub.vtt" kind="subtitles" srclang="es" label="Español" default>
+                  </video>
+                  </div>
+                  
                 </div>
               </div>
               <div class="col-12 col-lg-6">
