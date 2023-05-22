@@ -1,4 +1,5 @@
 // Custom.scss
+// Fontes custom
 @font-face {
   font-family: "Baguette";
   src: url("../../Recursos/Fuentes/Baguette/Baguette.ttf");
@@ -7,15 +8,16 @@
   font-family: "Magic-Bread";
   src: url("../../Recursos/Fuentes/Magic-bread/MagicBreadRegular.ttf");
 }
+// Importamos funciones , variables e mixins de bootstrap
 @import "../bootstrap/scss/functions";
 @import "../bootstrap/scss/variables";
 @import "../bootstrap/scss/mixins";
-// 2- Variables Overrides
+// Cambiamos duas variables para integrar as novas fontes como por defecto
 $font-family-sans-serif: Magic-Bread;
 $font-family-serif: Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace: Baguette;
 
-//5- Add additional custom code here
+// Añadimos codigo extra para novos colores da paleta de colores seleccionada
 $custom-colors: (
   "bgcolor": #dbdbdb,
   "header": #f7a325,
